@@ -33,7 +33,7 @@ type Zone struct {
 }
 
 func part2(singleOutput string) {
-	singleOutput = strings.ReplaceAll(singleOutput, `\n`, "")
+	singleOutput = strings.ReplaceAll(singleOutput, "\n", "")
 	validZones := []Zone{}
 	dontRegex := regexp.MustCompile(`don\'t\(\)`)
 	doRegex := regexp.MustCompile(`do\(\)`)
@@ -52,7 +52,6 @@ func part2(singleOutput string) {
 			continue
 		}
 		end := 0
-		// if i+1 == len(donts) then end = len(singleOutput)
 		endIndex := 0
 		if lastInsert.EndIndex+1 < len(donts) {
 			end = donts[lastInsert.EndIndex][0]
