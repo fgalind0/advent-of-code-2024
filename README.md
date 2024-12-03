@@ -1,0 +1,1 @@
+Just adding my progress and setting others to see what i'm doing see [AOC](https://adventofcode.com)
